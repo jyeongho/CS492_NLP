@@ -77,8 +77,8 @@ In this file, there are some commmands and arguments for executing files.
 Packages for our project
 
 ## The path of pre-trained model in NSML
-When we saved models, we forgot to change model name in arguments. The model name is bert, but the actual model is KoELECTRA. Sorry for the confusion.
 ---
+When we saved models, we forgot to change model name in arguments. The model name is bert, but the actual model is KoELECTRA. Sorry for the confusion.
 1. Training KoELECTRA during 10 epochs. The only difference from baseline is using KoELECTRA model instead of BERT.
 - kaist006/korquad-open-ldbd3/58/bert_best
 
