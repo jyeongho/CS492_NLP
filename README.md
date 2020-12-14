@@ -77,3 +77,27 @@ In this file, there are some commmands and arguments for executing files.
 Packages for our project
 
 ## The path of pre-trained model in NSML
+When we saved models, we forgot to change model name in arguments. The model name is bert, but the actual model is KoELECTRA. Sorry for the confusion.
+<br/>1. Training KoELECTRA during 10 epochs. The only difference from baseline is using KoELECTRA model instead of BERT.
+- kaist006/korquad-open-ldbd3/58/bert_best
+
+2. Training intensive reading module and sketchy reading module based on KoELECTRA during 5 epochs. Same as baseline, training dataset is created by choosing three paragraphs.
+- Intensive reading module : kaist006/korquad-open-ldbd3/78/bert_best
+- Sketchy reading module : kaist006/korquad-open-ldbd3/81/electra_best
+
+3. Training intensive reading module and sketchy reading module based on KoELECTRA during 5 epochs. Training dataset is created by choosing **five paragraphs**.
+- Intensive reading module : kaist006/korquad-open-ldbd3/83/bert_best
+- Sketchy reading module : kaist006/korquad-open-ldbd3/84/electra_best
+
+4. Training intensive reading module and sketchy reading module based on KoELECTRA during 5 epochs. Training dataset is created by choosing **random paragraphs**.
+- Intensive reading module : kaist006/korquad-open-ldbd3/92/bert_best
+- Sketchy reading module : kaist006/korquad-open-ldbd3/93/electra_best
+
+5. Training intensive reading module and sketchy reading module based on KoELECTRA during 5 epochs. Training dataset is created by choosing **paragraphs using relevance**.
+- Intensive reading module : kaist006/korquad-open-ldbd3/103/bert_best
+- Sketchy reading module : kaist006/korquad-open-ldbd3/105/electra_best
+
+6. Training intensive reading module and sketchy reading module based on KoELECTRA during 5 epochs. Training dataset is created by choosing **paragraphs using word-based similarity**.
+- Intensive reading module : kaist006/korquad-open-ldbd3/120/bert_best
+- Sketchy reading module : kaist006/korquad-open-ldbd3/121/electra_best
+
