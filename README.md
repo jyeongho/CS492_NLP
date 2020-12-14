@@ -65,11 +65,11 @@ In this file, there are some commmands and arguments for executing files.
 - https://github.com/jyeongho/CS492_NLP/blob/main/run_nsml.sh#L6
 
 3) Command for saving two models into one session
-Before running this command, you should enter session name of intensive reading module in [here] (https://github.com/jyeongho/CS492_NLP/blob/main/run_save_model.py#L164), and enter session name of sketchy reading moduloe in [here] (https://github.com/jyeongho/CS492_NLP/blob/main/run_save_model.py#L157).
+<br/> Before running this command, you should enter session name of intensive reading module in [here] (https://github.com/jyeongho/CS492_NLP/blob/main/run_save_model.py#L164), and enter session name of sketchy reading moduloe in [here] (https://github.com/jyeongho/CS492_NLP/blob/main/run_save_model.py#L157).
 - https://github.com/jyeongho/CS492_NLP/blob/main/run_nsml.sh#L9
 
 4) Command for making prediction using two models
-Before running this command, you shold enter session name, which created by command 3), in [here](https://github.com/jyeongho/CS492_NLP/blob/main/run_two_model.py#L547).
+<br/> Before running this command, you shold enter session name, which created by command 3), in [here](https://github.com/jyeongho/CS492_NLP/blob/main/run_two_model.py#L547).
 - https://github.com/jyeongho/CS492_NLP/blob/main/run_nsml.sh#L12
 
 ### setup.py
