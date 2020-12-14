@@ -99,6 +99,13 @@ When we saved models, we forgot to change model name in arguments. The model nam
 - Sketchy reading module : kaist006/korquad-open-ldbd3/105/electra_best
 
 6. Training intensive reading module and sketchy reading module based on KoELECTRA during 5 epochs. Training dataset is created by choosing **paragraphs using word-based similarity**.
-- Intensive reading module : kaist006/korquad-open-ldbd3/120/bert_best
-- Sketchy reading module : kaist006/korquad-open-ldbd3/121/electra_best
+  - Intensive reading module : kaist006/korquad-open-ldbd3/120/bert_best
+  - Sketchy reading module : kaist006/korquad-open-ldbd3/121/electra_best
 
+7. Session that contains two models. This sessions are created by executing 'run_save_model.py' file.
+  - For models in session 78, 81 : kaist006/korquad-open-ldbd3/117/saved
+  - For models in session 83, 84 : kaist006/korquad-open-ldbd3/158/saved
+  - For models in session 92, 93 : kaist006/korquad-open-ldbd3/159/saved
+  - For models in session 103, 105 : kaist006/korquad-open-ldbd3/160/saved
+  - For models in session 120, 121 : kaist006/korquad-open-ldbd3/180/saved
+  
