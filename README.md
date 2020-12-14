@@ -49,12 +49,28 @@ This file is for training intensive Reading Module in retrospective paper. Using
 
 ### run_save_model.py
 ---
+Thie file is for saving models in separate sessions into one session. Because Sketchy Reading Module and Intensive Reading Module are saved in different session, we need to save these model in one session for convenience.
 
 ### run_two_model.py
 ---
+This file is for making predictions using Classification model and QuestionAnswering model. Use ElectraForSequenceClassification model as sketchy reading module. Use ElectraForQuestionAnswering model as intensive reading module. Since this file is only for making prediction, there is no train function.
 
 ### run_nsml.sh
 ---
+In this file, there are some commmands and arguments for executing files. 
+1) Command for training intensive reading module
+- https://github.com/jyeongho/CS492_NLP/blob/main/run_nsml.sh#L3
+
+2) Command for training sketchy reading module
+- https://github.com/jyeongho/CS492_NLP/blob/main/run_nsml.sh#L6
+
+3) Command for saving two models into one session
+Before running this command, you should enter session name of intensive reading module in [here] (https://github.com/jyeongho/CS492_NLP/blob/main/run_save_model.py#L164), and enter session name of sketchy reading moduloe in [here] (https://github.com/jyeongho/CS492_NLP/blob/main/run_save_model.py#L157).
+- https://github.com/jyeongho/CS492_NLP/blob/main/run_nsml.sh#L9
+
+4) Command for making prediction using two models
+Before running this command, you shold enter session name, which created by command 3), in [here](https://github.com/jyeongho/CS492_NLP/blob/main/run_two_model.py#L547).
+- https://github.com/jyeongho/CS492_NLP/blob/main/run_nsml.sh#L12
 
 ### setup.py
 ---
