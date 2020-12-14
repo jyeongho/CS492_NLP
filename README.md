@@ -17,6 +17,14 @@ To applying retrospective paper, we modified some functions and added class.<br/
 - https://github.com/jyeongho/CS492_NLP/blob/main/open_squad.py#L729
 - Reference : https://github.com/cooelf/AwesomeMRC/blob/master/transformer-mrc/transformers/data/processors/squad.py
 
+2) Change criterion for choosing examples.
+<br/> We modify this part to choose examples using word-based similarity
+- https://github.com/jyeongho/CS492_NLP/blob/main/open_squad.py#L559
+
+3) Create new SquadResult_with_score class to contain ext score.
+<br/> This class is used in 'run_two_model.py' and created for [compute_predictions_logits_with_score](https://github.com/jyeongho/CS492_NLP/blob/main/open_squad_metrics.py#L712) function in 'open_squad_metrics.py' .
+- https://github.com/jyeongho/CS492_NLP/blob/main/open_squad.py#L813
+
 ### open_squad_metrics.py
 
 
