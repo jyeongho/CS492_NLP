@@ -26,7 +26,8 @@ To applying retrospective paper, we modified some functions and added class.<br/
 - https://github.com/jyeongho/CS492_NLP/blob/main/open_squad.py#L813
 
 ### open_squad_metrics.py
-
+1) Add functions for fixing error in get_final_text function
+<br/> When 'get_final_text' function does change pred_text using orig_text, there are some error cases related with de-tokenization. For example, unicode '\xa0' instead of ' ', unicode '\u200e' instead of '', unknown signs etc.
 
 
 ### run_cls.py
