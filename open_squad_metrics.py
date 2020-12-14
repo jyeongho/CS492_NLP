@@ -907,7 +907,7 @@ def compute_predictions_logits_with_score(
             # label argument was used for debugging and calculating distribution of data to determine proper threshold
             label = best_non_null_entry.label
             all_label_v[label].append(v)
-            if best_non_null_entry.score_diff > null_score_diff_threshold or best_non_null_entry.score_ext > null_score_diff_threshold:
+            if v > null_score_diff_threshold:
                 all_predictions[example.qas_id] = ""
             else:
                 all_predictions[example.qas_id] = best_non_null_entry.text
