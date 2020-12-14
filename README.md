@@ -4,13 +4,18 @@ CS492_NLP : QuestionAnswering task for korsquad dataset
 ## File discription
 ### model_electra.py
 ---
-Modified class of Electra models for retrospective reader paper [arXiv:2001.09694](https://arxiv.org/pdf/2001.09694.pdf)
-<br/>For external front verfication, we used 'ElectraForSequenceClassification' class. For internel front verfication, we used 'ElectraForQuestionAnswering' class.Model classes are from huggingface[1]. And, referring to retrospective reader code[2], a part of the class was modified.
+Modified class of Electra models for retrospective reader paper [arXiv:2001.09694](https://arxiv.org/pdf/2001.09694.pdf). For external front verfication, we used 'ElectraForSequenceClassification' class. For internel front verfication, we used 'ElectraForQuestionAnswering' class.Model classes are from huggingface[1]. And, referring to retrospective reader code[2], a part of the class was modified.
 <br/>[1] : https://github.com/huggingface/transformers/blob/master/src/transformers/models/electra/modeling_electra.py
 <br/>[2] : https://github.com/cooelf/AwesomeMRC/blob/master/transformer-mrc/transformers/modeling_albert.py
 
 ### open_squad.py
-
+---
+To applying retrospective paper, we modified some functions and added class.<br/>
+1) Add 'is_impossible', 'pq_end_pos' into SquadFeature.
+- https://github.com/jyeongho/CS492_NLP/blob/main/open_squad.py#L96
+- https://github.com/jyeongho/CS492_NLP/blob/main/open_squad.py#L279
+- https://github.com/jyeongho/CS492_NLP/blob/main/open_squad.py#L729
+- Reference : https://github.com/cooelf/AwesomeMRC/blob/master/transformer-mrc/transformers/data/processors/squad.py
 
 ### open_squad_metrics.py
 
