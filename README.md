@@ -26,9 +26,15 @@ To applying retrospective paper, we modified some functions and added class.<br/
 - https://github.com/jyeongho/CS492_NLP/blob/main/open_squad.py#L813
 
 ### open_squad_metrics.py
-1) Add functions for fixing error in get_final_text function
-<br/> When 'get_final_text' function does change pred_text using orig_text, there are some error cases related with de-tokenization. For example, unicode '\xa0' instead of ' ', unicode '\u200e' instead of '', unknown signs etc.
+1) Add functions for fixing error in get_final_text function.
+<br/> When 'get_final_text' function does change pred_text using orig_text, there are some error cases related with de-tokenization. For example, [UNK] or '##' in pred_text, unicode '\xa0' instead of ' ', unicode '\u200e' instead of '', unknown signs etc. To avoid thie cases, we add some functions.
+- https://github.com/jyeongho/CS492_NLP/blob/main/open_squad_metrics.py#L282
+- https://github.com/jyeongho/CS492_NLP/blob/main/open_squad_metrics.py#L289
+- https://github.com/jyeongho/CS492_NLP/blob/main/open_squad_metrics.py#L329
 
+2) Create function for prediction to use ext score and diff score.
+<br/> To make prediction using ext score and diff score, we add new function.
+- https://github.com/jyeongho/CS492_NLP/blob/main/open_squad_metrics.py#L712
 
 ### run_cls.py
 
